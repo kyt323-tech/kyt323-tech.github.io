@@ -59,7 +59,6 @@ exclude:
 # 9. 필수 로드 플러그인 리스트 (매우 중요)
 plugins:
   - jekyll-paginate
-  - jekyll-theme-chirpy
   - jekyll-archives
   - jekyll-sitemap
 
