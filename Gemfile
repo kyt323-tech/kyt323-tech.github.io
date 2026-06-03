@@ -2,13 +2,11 @@
 
 source "https://rubygems.org"
 
-gem "jekyll-theme-chirpy", "~> 7.5"
+gem "jekyll", "~> 4.3"
+gem "jekyll-theme-chirpy", "~> 7.0"
 
-gem "html-proofer", "~> 5.0", group: :test
-
-platforms :windows, :jruby do
-  gem "tzinfo", ">= 1", "< 3"
-  gem "tzinfo-data"
+group :jekyll_plugins do
+  gem "jekyll-archives"
+  gem "jekyll-paginate"
+  gem "jekyll-sitemap"
 end
-
-gem "wdm", "~> 0.2.0", :platforms => [:windows]
