@@ -1,11 +1,85 @@
-# 블로그 실제 도메인 주소 (kyt323-tech로 설정)
+# ==========================================
+# kyt323-tech's Blog Site Configuration
+# ==========================================
+
+# 1. 테마 적용 선언 (매우 중요)
+theme: jekyll-theme-chirpy
+
+# 2. 기본 도메인 및 경로 설정
+baseurl: ''
 url: 'https://kyt323-tech.github.io'
 
-# 블로그 타이틀 및 설명
+# 3. 사이트 정보 및 언어 설정
+lang: ko-KR
+timezone: Asia/Seoul
+
 title: 'kyt323-tech의 기술 블로그'
 tagline: '주제별 글을 모아두는 나만의 공간'
+description: 'kyt323-tech의 개인 기술 블로그입니다.'
 
-# 작성자 및 타임존 설정
-author: 'kyt323-tech'
-timezone: 'Asia/Seoul'
-lang: 'ko-KR'      
+# 4. 작성자 정보 설정
+author:
+  name: 'kyt323-tech'
+  github: 'kyt323-tech'
+  twitter: ''
+
+# 5. 소셜 링크 설정 (하단 사이드바 아이콘)
+social:
+  name: 'kyt323-tech'
+  email: ''
+  links:
+    - https://github.com/kyt323-tech
+
+# 6. 테마 컬러 모드 설정 (비워두면 주간/야간 자동 감지)
+theme_mode: ""
+
+# 7. 마크다운 처리기 및 하이라이터 설정
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+# 8. 빌드 대상에서 제외할 파일 목록
+exclude:
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - node_modules
+  - vendor
+  - tools
+  - docs
+  - LICENSE
+  - README.md
+
+# 9. 필수 로드 플러그인 리스트 (매우 중요)
+plugins:
+  - jekyll-paginate
+  - jekyll-theme-chirpy
+  - jekyll-archives
+  - jekyll-sitemap
+
+# 10. 아카이브 자동 분류 설정 (주제별, 태그별 분류의 핵심)
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
+# 11. 페이징 설정 (글 10개마다 다음 페이지 생성)
+paginate: 10
+paginate_path: "/page:num/"
+
+# 12. 목차(TOC) 기능 활성화
+toc: true
+
+# 13. 댓글 비활성화 (나중에 원하실 때 활성화 가능)
+comments:
+  active: false
