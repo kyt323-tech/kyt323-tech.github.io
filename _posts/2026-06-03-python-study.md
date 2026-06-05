@@ -5,6 +5,13 @@ categories: [개발, 아이작심]                # [상위주제, 하위주제]
 tags: [파이썬, 시뮬레이션]                  # 태그 지정
 ---
 
+### Minkowski
+(minkowski) sfa@HW20241029-01:~/miniconda3/envs/minkowski$ pwd  
+
+
+가상환경 저장위치: /home/sfa/miniconda3/envs/minkowski
+
+
 ### AnyDexGrasp
 
 저장폴더: /home/sfa/AnyDexGrasp 에 저장함.  
