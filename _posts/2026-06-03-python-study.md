@@ -7,7 +7,7 @@ tags: [파이썬, 시뮬레이션]                  # 태그 지정
 
 ### AnyDexGrasp
 
-저장폴더: /home/sfa/AnyDexGrasp 에 저장함. 
+저장폴더: /home/sfa/AnyDexGrasp 에 저장함. <br>
 AnyDexGrasp 실행 명령어 : (minkowski) sfa@HW20241029-01:~/AnyDexGrasp$ python wsl_inference_server_ADG_v2.py 
 
 
