@@ -8,6 +8,9 @@ tags: [파이썬, 시뮬레이션]                  # 태그 지정
 ### AnyDexGrasp
 
 저장폴더: /home/sfa/AnyDexGrasp 에 저장함. 
+AnyDexGrasp 실행 명령어 : (minkowski) sfa@HW20241029-01:~/AnyDexGrasp$ python wsl_inference_server_ADG_v2.py 
+
+
 마크다운(Markdown) 문법을 지원하므로 글자 크기 조절, 코드 삽입 등이 매우 자유롭습니다.
 
 * 리스트 형식 작성도 가능합니다.
