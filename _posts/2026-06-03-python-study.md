@@ -52,7 +52,11 @@ Loading Decision Models...
    👉 Found best model: 0.9_0.8732_0.1565_0.256_260.pth
 ✅ Loaded Type 4 (F_Tripod_Grasp)
 
-🚀 Ready for requests...
+🚀 Ready for requests...  
+
+
+<img width="1130" height="487" alt="image" src="https://github.com/user-attachments/assets/c8cae10a-9c5b-49a4-84e7-14e796008956" />
+
 
 
 * **두꺼운 글씨**나 *기울임*도 표현할 수 있습니다.
