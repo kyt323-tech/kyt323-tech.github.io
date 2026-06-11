@@ -6,10 +6,14 @@ tags: [파이썬, 시뮬레이션]                  # 태그 지정
 ---
 
 ### Minkowski
-(minkowski) sfa@HW20241029-01:~/miniconda3/envs/minkowski$ pwd  
+sfa@HW20241029-01:~/miniconda3/envs/minkowski$ pwd  
 
+/home/sfa/miniconda3/envs/minkowski  
 
-가상환경 저장위치: /home/sfa/miniconda3/envs/minkowski
+sfa@HW20241029-01:~/miniconda3/envs/minkowski$ conda activate minkowski  
+
+(minkowski) sfa@HW20241029-01:~/miniconda3/envs/minkowski$   
+
 
 
 ### AnyDexGrasp
