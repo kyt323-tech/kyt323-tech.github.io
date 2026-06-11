@@ -18,10 +18,10 @@ sfa@HW20241029-01:~/miniconda3/envs/minkowski$ conda activate minkowski
 
 ### AnyDexGrasp
 
-### AnyDexGrasp
+(minkowski) sfa@HW20241029-01:~/AnyDexGrasp$ pwd  
 
-(minkowski) sfa@HW20241029-01:~/AnyDexGrasp$ pwd
-**/home/sfa/AnyDexGrasp**
+**/home/sfa/AnyDexGrasp**  
+
 (minkowski) sfa@HW20241029-01:~/AnyDexGrasp$ ls
 README.md                                  generate_mesh_and_pointcloud  robot_dh3.py
 __pycache__                                get_camK.py                   robot_inspire.py
@@ -33,8 +33,11 @@ command_generate_mesh_file.sh              pointnet2                     utils
 command_robot_multifinger_grasp.sh         process_pregen_label.py       wsl_grasp_server_data_collector_ADG_v2.py
 command_train_multifinger_decision.sh      realsense.py                  wsl_inference_server_ADG_v2.py
 command_train_representation.sh            requirements.txt
-dataset                                    robot_allegro.py
-**(minkowski) sfa@HW20241029-01:~/AnyDexGrasp$ python wsl_inference_server_ADG_v2.py**
+dataset                                    robot_allegro.py  
+
+
+**(minkowski) sfa@HW20241029-01:~/AnyDexGrasp$ python wsl_inference_server_ADG_v2.py**  
+
 🔥 Robust Multi-Finger Inference Server Starting...
 Loading Base GraspNet...
 ✅ Base GraspNet Loaded.
