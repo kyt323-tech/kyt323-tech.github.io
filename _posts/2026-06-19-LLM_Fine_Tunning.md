@@ -10,5 +10,8 @@ tags: [파이썬, LLM 튜닝]                  # 태그 지정
    import os  <br>
    import torch <br>
    from contextlib import nullcontext <br>
-   
+   from datasets import load_dataset <br>
+   from peft import get_peft_model, LoraConfig, prepare_model_for_kbit_training <br>
+   from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAnyBytesConfig <br>
+   from trl import SFTConfig, SFTTrainer <br><br>
    
