@@ -5,3 +5,8 @@ categories: [개발, LLM]                # [상위주제, 하위주제] 순서�
 tags: [파이썬, LLM 튜닝]                  # 태그 지정
 ---
 
+1. 라이브러리 임포트
+   import os
+   import torch
+   from contextlib import nullcontext
+   
