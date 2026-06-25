@@ -15,4 +15,6 @@ tags: [파이썬, LLM 튜닝]                  # 태그 지정
    from trl import SFTConfig, SFTTrainer <br><br>
 2. **양자화된 베이스 모델 로드하기** <br>
 
+pip install -U diffusers <br>
+
    
