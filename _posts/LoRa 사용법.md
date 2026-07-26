@@ -6,14 +6,14 @@ tags: [파이썬, 시뮬레이션]                  # 태그 지정
 ---
 LoRa 파일튜닝 방법 ""COSMOS"" 세부기술 검토
 
-# r(랭크) : r이 작을수록 메모리/학습시간이 절약, 단 표현력 제한
+r(랭크) : r이 작을수록 메모리/학습시간이 절약, 단 표현력 제한
 
-# lora_alpha : 스케일 조정
+lora_alpha : 스케일 조정
     # 실제 적용되는 스케일 = lora_alpha / r
     # config = LoraConfig(r=8, lora_alpha=32) # 스케일 =4, 일반적 권장
     # 일반적으로 r의 2~4배 값을 사용하며, r=8일때, lora_alpha=16 또는 32 가 적절
 
-# targent_modules : LoRa를 적용할 모듈 지정
+targent_modules : LoRa를 적용할 모듈 지정
     # 일반적으로 attention의 q_proj, v_proj에 적용
     # config = LoraConfig(r=8, target_modules=["q_proj", "v_proj"])
 
@@ -30,7 +30,6 @@ LoRa 파일튜닝 방법 ""COSMOS"" 세부기술 검토
 
 
 from re import A
-
 from transformers import AutoModelForCausalLM
 from peft import LoraConfig, get_peft_model
 
