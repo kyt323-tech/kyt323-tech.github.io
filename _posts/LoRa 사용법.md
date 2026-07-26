@@ -4,7 +4,7 @@ date: 2026-07-25 18:00:00 +0900           # 작성 시간
 categories: [개발, LLM]                # [상위주제, 하위주제] 순서대로 입력
 tags: [파이썬, 시뮬레이션]                  # 태그 지정
 ---
-LoRa 파일튜닝 방법 ""COSMOS"" 세부기술 검토
+LoRa 파일튜닝 방법 세부기술 검토
 
 r(랭크) : r이 작을수록 메모리/학습시간이 절약, 단 표현력 제한
 
@@ -33,19 +33,19 @@ from re import A
 from transformers import AutoModelForCausalLM
 from peft import LoraConfig, get_peft_model
 
-# 1. 기본 모델 로드
+1. 기본 모델 로드
 model = AutoModelForCausalLM.from_pretrained("beomi/Llama-3-Open-Ko-8B")
 
-#2. LoRa 설정
+2. LoRa 설정
 config = LoraConfig(
     r=8,
     lora_alpha=32,
     target_modules=["q_proj", "v_proj"],
     lora_dropout=0.05)
 
-#3. LoRa 적용
+3. LoRa 적용
 model = get_peft_model(model, config)
 
-# 학습할 수 있는 파라미터 확인
+학습할 수 있는 파라미터 확인
 model.print_trainable_parameters()
-# 출력: trainable params: 1,048,576 || all params: 8,388,608 || trainable%: 12.50%
+출력: trainable params: 1,048,576 || all params: 8,388,608 || trainable%: 12.50%
